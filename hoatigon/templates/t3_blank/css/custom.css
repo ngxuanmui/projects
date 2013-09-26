@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+body { background: #91d7eb; }
+
+.absolute { position: absolute; }
+.relative { position: relative; }
+
+.logo-image a { width: 361px; height: 242px; }
+.banner-txt-intro { background: url('../images/banner-text-intro.png') no-repeat; width: 465px; height: 177px; display: block; }
+
+#banner-top { height: 604px; top: 0; left: 0; z-index: -1; background: url('../images/bg-top.png') top center; width: 100%; }
+.t3-header { padding-top: 150px; }
+
+footer { margin: auto; width: 960px; }
+
+.main-body-content { background: #009ce0; padding: 20px 10px; width: 960px; margin: auto; border-radius: 15px; }
