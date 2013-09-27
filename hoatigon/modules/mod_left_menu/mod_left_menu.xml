@@ -6,13 +6,13 @@
 	method="upgrade">
 	<name>mod_left_menu</name>
 	<author>Joomla! Project</author>
-	<creationDate>July 2004</creationDate>
+	<creationDate>Oct 2013</creationDate>
 	<copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<authorEmail>admin@joomla.org</authorEmail>
 	<authorUrl>www.joomla.org</authorUrl>
 	<version>2.5.0</version>
-	<description>Top Menu</description>
+	<description>Left Menu</description>
 	<files>
 		<filename module="mod_left_menu">mod_left_menu.php</filename>
 		<folder>tmpl</folder>

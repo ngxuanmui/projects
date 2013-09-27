@@ -1,16 +1,69 @@
 @CHARSET "UTF-8";
 
-body { background: #91d7eb; }
+body { background: #91d7eb; font-size: 12px; }
 
 .absolute { position: absolute; }
 .relative { position: relative; }
+.clr { clear: both; }
+.fltlft { float: left; }
+.fltrgt { float: right; }
+
+.icons { background: url('../images/icons.png') no-repeat; }
 
 .logo-image a { width: 361px; height: 242px; }
 .banner-txt-intro { background: url('../images/banner-text-intro.png') no-repeat; width: 465px; height: 177px; display: block; }
 
 #banner-top { height: 604px; top: 0; left: 0; z-index: -1; background: url('../images/bg-top.png') top center; width: 100%; }
+#banner-bottom { height: 633px; bottom: 0; left: 0; z-index: -1; background: url('../images/bg-bottom.png') top center; width: 100%; }
+
+/* overwrite t3 css */
 .t3-header { padding-top: 150px; }
+.t3-module { margin-bottom: 15px; }
+/* end overwrite */
 
-footer { margin: auto; width: 960px; }
+footer { margin: auto; width: 960px; height: 415px; }
 
-.main-body-content { background: #009ce0; padding: 20px 10px; width: 960px; margin: auto; border-radius: 15px; }
+.main-body-content { background: #009ce0; padding: 20px 10px; width: 940px; margin: auto; border-radius: 10px; }
+
+#top-menu { width: 960px; margin: 0 auto; }
+#top-menu a { display: block; height: 36px; float: left; text-align: center; line-height: 36px; font-size: 16px; font-weight: bold; font-style: italic; color: #000; }
+#top-menu a.trang-chu { width: 134px; margin-right: 6px; margin-left: 8px; }
+#top-menu a.nuoi-day { width: 160px; background-position: -143px 0; margin-right: 6px; }
+#top-menu a.thuc-don { width: 162px; background-position: -313px 0; margin-right: 6px; }
+#top-menu a.tho-truyen { width: 160px; background-position: -481px 0; margin-right: 7px; }
+#top-menu a.hinh-anh { width: 156px; background-position: -647px 0; margin-right: 7px; }
+#top-menu a.lien-he { width: 139px; background-position: -809px 0; }
+
+.box { border: 2px solid #f49ac2; }
+.bg { background: #fad5e5; }
+.round { border-radius: 5px; }
+
+/* layout */
+.left-side { width: 250px; margin-right: 10px; padding-top: 20px; }
+.main-side { width: 430px; padding: 20px 10px; }
+.right-side { width: 230px; }
+
+/* other */
+.xoay-tren {}
+.xoay-duoi-1 {}
+.xoay-duoi-2 {}
+.con-kien {}
+.con-chim { width: 73px; height: 54px; background-position: -640px -141px; top: -42px; left: -5px; }
+
+/* left */
+.left-menu { padding: 35px 25px 20px 22px; }
+.left-menu a { display: block; margin-bottom: 10px; }
+.left-menu a.co-cau-to-chuc { background-position: -258px -592px; height: 32px; }
+.left-menu a.tien-ich { background-position: -258px -634px; height: 32px; }
+.left-menu a.nuoi-day { background-position: -258px -673px; height: 36px; }
+.left-menu a.hoat-dong { background-position: -258px -715px; height: 34px; }
+
+.left-album div.anh-moi { width: 139px; height: 41px; margin-right: 35px; background-position: -557px -53px; margin-top: 7px; }
+
+.new-album-container { padding: 15px 0 30px 9px; margin-left: 15px; }
+.new-album-frame { background-position: 0 -585px; width: 212px; height: 165px; display: block; top: 0; left: 0; }
+
+.chuong-trinh-ngoai-khoa { background-position: -557px -108px; width: 201px; height: 21px; margin-left: 21px; }
+.anh-chuong-trinh-ngoai-khoa { background-position: 0 -382px; width: 207px; height: 206px; margin-left: 18px; margin-bottom: 15px;  }
+.anh-chuong-trinh-ngoai-khoa img { margin: 40px 0 0 14px; }
+/* end left */

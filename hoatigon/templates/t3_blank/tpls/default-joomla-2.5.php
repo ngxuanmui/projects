@@ -24,19 +24,17 @@ defined('_JEXEC') or die;
     <?php $this->loadBlock ('head') ?>
   </head>
 
-  <body>
+  <body class="relative">
   
   	<div id="banner-top" class="absolute"></div>
-  <div id="banner-bottom"></div>
+  
 
    <div id="main-content">
     <?php $this->loadBlock ('header') ?>
     
     <?php #$this->loadBlock ('mainnav') ?>
     
-    <div class="top-menu">
-    	<jdoc:include type="modules" name="top-menu" style="T3Xhtml" />
-    </div>
+    <jdoc:include type="modules" name="top-menu" style="xhtml" />
 
     <?php $this->loadBlock ('spotlight-1') ?>
 
@@ -50,6 +48,8 @@ defined('_JEXEC') or die;
     
     <?php $this->loadBlock ('footer') ?>
     </div>
+    
+    <div id="banner-bottom" class="absolute"></div>
   </body>
 
 </html>
