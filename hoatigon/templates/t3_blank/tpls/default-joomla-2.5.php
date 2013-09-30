@@ -42,6 +42,14 @@ defined('_JEXEC') or die;
     	<?php $this->loadBlock ('mainbody') ?>
     </div>
     
+    <div class="box-1 relative">
+    	<div class="icons hinh-anh-be"></div>
+    	<div class="slider">
+    		Hình ảnh slider
+    	</div>
+    	<div class="icons absolute dia-chi-truong-mam-non"></div>
+    </div>
+    
     <?php $this->loadBlock ('spotlight-2') ?>
     
     <?php #$this->loadBlock ('navhelper') ?>

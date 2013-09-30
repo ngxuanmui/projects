@@ -19,9 +19,12 @@ body { background: #91d7eb; font-size: 12px; }
 /* overwrite t3 css */
 .t3-header { padding-top: 150px; }
 .t3-module { margin-bottom: 15px; }
+.t3-module ul, .t3-module ol { margin: 0; list-style: none; }
+.t3-mainbody { padding: 0; }
 /* end overwrite */
 
 footer { margin: auto; width: 960px; height: 415px; }
+footer div.icons { height: 154px; background-position: 0 -220px; margin-top: 20px; }
 
 .main-body-content { background: #009ce0; padding: 20px 10px; width: 940px; margin: auto; border-radius: 10px; }
 
@@ -41,15 +44,17 @@ footer { margin: auto; width: 960px; height: 415px; }
 /* layout */
 .left-side { width: 250px; margin-right: 10px; padding-top: 20px; }
 .main-side { width: 430px; padding: 20px 10px; }
-.right-side { width: 230px; }
+.right-side { width: 220px; margin-right: 20px; }
 /* end layout */
 
 /* other */
 .xoay-tren {}
 .xoay-duoi-1 {}
 .xoay-duoi-2 {}
-.con-kien {}
+.xoay-duoi-2 {}
+.con-kien { width: 74px; height: 64px; background-position: -321px -52px; top: -40px; left: -7px; }
 .con-chim { width: 73px; height: 54px; background-position: -640px -141px; top: -42px; left: -5px; }
+.top-slider-image { margin-bottom: 25px; margin-left: 15px; }
 
 /* left */
 .left-menu { padding: 35px 25px 20px 22px; }
@@ -67,4 +72,35 @@ footer { margin: auto; width: 960px; height: 415px; }
 .chuong-trinh-ngoai-khoa { background-position: -557px -108px; width: 201px; height: 21px; margin-left: 21px; }
 .anh-chuong-trinh-ngoai-khoa { background-position: 0 -382px; width: 207px; height: 206px; margin-left: 18px; margin-bottom: 15px;  }
 .anh-chuong-trinh-ngoai-khoa img { margin: 40px 0 0 14px; }
+
+.left-other { padding-bottom: 15px; }
+.tuyen-dung { display: block; width: 240px; height: 148px; background-position: -740px -379px; margin: 30px 0 5px 5px; }
+.left-other .txt-support-online { width: 225px; height: 36px; background-position: -741px -527px; margin: 0 0 10px 8px; }
+.left-other .yahoo-support { display: inline-block; width: 48px; height: 40px; background-position: -741px -575px; }
+.left-other .so-dien-thoai { display: inline-block; width: 169px; height: 35px; background-position: -796px -579px; margin-left: 5px; }
+.left-other .txt-stat { width: 150px; height: 40px; background-position: -739px -619px; margin-left: 35px; }
+.left-other .stat-info { height: 80px; padding: 10px 30px; }
+
 /* end left */
+
+/* right */
+.right-other { padding: 30px 0; margin-bottom: 10px; text-align: center; }
+.right-other a { display: block; margin-bottom: 15px; }
+.right-other a.camera { width: 177px; height: 130px; background-position: -223px -378px; margin-left: 15px; }
+.right-other a.thu-vien-anh { width: 139px; height: 163px; background-position: -408px -379px; margin-left: 42px; }
+.right-other a.kho-video { width: 156px; height: 183px; background-position: -558px -376px; margin-left: 40px; }
+.top-box-latest-news { width: 232px; height: 53px; background-position: -394px -128px; }
+.right-latest-news { background: url('../images/bg-latest-news.png')  repeat-y; padding: 0px 15px; width: 192px; }
+.right-latest-news a { display: block; font-weight: bold; padding-top: 10px; }
+.bottom-box-latest-news { width: 232px; height: 33px; background-position: -394px -189px; }
+/* end right */
+
+/* bottom */
+.box-1 { border: 4px solid #f47920; width: 920px; margin: auto; border-radius: 10px; margin-top: 20px; padding: 10px 20px; background: #fad5e5; }
+.box-1 .hinh-anh-be { background-position: -750px -64px; width: 218px; height: 36px; }
+.dia-chi-truong-mam-non { background-position: 0px -764px; width: 334px; height: 13px; right: 10px; bottom: 0; }
+
+
+/* content */
+.body-featured ul { list-style: none; margin: 0; padding: 0; }
+.body-featured ul li { background: url("../images/icon-hoatigon.png") 0px 5px no-repeat; padding-left: 30px; margin-top: 20px; }

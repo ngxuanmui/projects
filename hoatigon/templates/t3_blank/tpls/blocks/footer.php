@@ -11,7 +11,7 @@ defined('_JEXEC') or die;
 <!-- FOOTER -->
 <footer>
 
-  Footer
+  <div class="icons"></div>
 
 </footer>
 <!-- //FOOTER -->
