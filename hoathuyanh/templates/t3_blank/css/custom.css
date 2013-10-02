@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+/* overwrite */
+.t3-mainnav { background: url('../images/cat_navbar.gif') repeat-x; border-bottom: 4px solid #6D9F10; }
+.t3-mainnav .navbar .nav > .active > a, .t3-mainnav .navbar .nav > .active > a:hover, .t3-mainnav .navbar .nav > .active > a:focus { background: none; }
+.t3-mainnav .nav li.dropdown.active > .dropdown-toggle, 
+.t3-mainnav .nav li.dropdown.open.active > .dropdown-toggle, 
+.t3-mainnav .nav li.active > a { background: #6D9F10 !important; }
+.t3-mainnav .navbar .nav > li > a { color: #FFF; }
+.t3-mainbody { padding-top: 0; }
+
+/* basic */
+.fltlft, .float-left { float: left; }
+.fltrgt, .float-right { float: right; }
+.clr { clear: both; }
+
+ul { list-style: none; margin: 0; padding: 0; }
+
+/* custom */
+footer > div.footer-container { padding: 20px 30px; }
+footer div.idea { color: #6d9f10; padding: 5px 20px; line-height: 20px; font-size: 0.9em; font-weight: bold; }
+footer .seperator { height: 2px; border-top: 4px solid #c6c6c6; border-bottom: 1px solid #c6c6c6; }
+h1.box-title { border-bottom: 1px solid #EFEFEF; padding: 0; }
+h1.box-title span { display: inline-block; border: 1px solid #EFEFEF; background: #6D9F10; color: #FFF; padding: 3px 15px 1px 15px; margin: 13px 0 0 20px; border-bottom: 0; font-size: 14px; line-height: 30px; }
+
+ul.list-items { margin: 20px 30px; }
+ul.list-items li { float: left; width: 200px; margin: 0; padding: 0; margin-right: 10px; }
+ul.list-items li h3 { line-height: 20px; font-size: 18px; }
+ul.list-items li.last { margin-right: 0; }
+ul.list-items li img { width: 100%; }
+ul.list-items li span.img { display: block; border: 1px solid #CCC; height: 150px; overflow: hidden; margin: 5px 0; }
+ul.list-items li p { margin: 5px 0; padding: 0; }
+
+#category .span2, #category .span10 { margin-left: 0; }
+.box-header { background-color: #6D9F10; padding: 10px; margin: 20px 0 0; }
+.box-header h2 { font-size: 2.0em; color: #111; line-height: 1.25; margin-bottom: .45em; font-weight: normal; color: #FFF; text-align: center; }
+
+ul.latest-list-images li { width: 235px; }
+

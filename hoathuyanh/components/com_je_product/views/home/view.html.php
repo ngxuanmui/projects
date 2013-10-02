@@ -22,10 +22,14 @@ jimport('joomla.application.component.view');
 class JE_ProductViewHome extends JView
 {
 	protected $items;
+	protected $promotion_items;
 	
 	function display($tpl = null)
 	{
-		$this->items = $this->get('Items');
+		$model = $this->getModel();
+		
+		$this->items = $model->getItems();
+		$this->promotion_items = $model->getItems($promotion = true);
 		
 		$this->_prepareDocument();
 

@@ -82,40 +82,40 @@
     width: 960px;
   }
   .span12 {
-    width: 1196px;
+    width: 960px;
   }
   .span11 {
-    width: 1093px;
+    width: 880px;
   }
   .span10 {
-    width: 990px;
+    width: 800px;
   }
   .span9 {
-    width: 887px;
+    width: 720px;
   }
   .span8 {
-    width: 784px;
+    width: 640px;
   }
   .span7 {
-    width: 681px;
+    width: 560px;
   }
   .span6 {
-    width: 578px;
+    width: 480px;
   }
   .span5 {
-    width: 475px;
+    width: 400px;
   }
   .span4 {
-    width: 372px;
+    width: 320px;
   }
   .span3 {
-    width: 269px;
+    width: 240px;
   }
   .span2 {
-    width: 166px;
+    width: 160px;
   }
   .span1 {
-    width: 63px;
+    width: 80px;
   }
   .offset12 {
     margin-left: 1276px;

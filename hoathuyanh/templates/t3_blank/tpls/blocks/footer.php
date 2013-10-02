@@ -9,28 +9,26 @@ defined('_JEXEC') or die;
 ?>
 
 <!-- FOOTER -->
-<footer id="t3-footer" class="wrap t3-footer">
-
-  <!-- FOOT NAVIGATION -->
-  <div class="container">
-    <?php $this->spotlight ('footnav', 'footer-1, footer-2, footer-3, footer-4, footer-5, footer-6') ?>
-  </div>
-  <!-- //FOOT NAVIGATION -->
-
-  <section class="t3-copyright">
-    <div class="container">
-      <div class="row">
-        <div class="<?php echo $this->getParam('t3-rmvlogo', 1) ? 'span8' : 'span12' ?> copyright<?php $this->_c('footer')?>">
-          <jdoc:include type="modules" name="<?php $this->_p('footer') ?>" />
-        </div>
-        <?php if($this->getParam('t3-rmvlogo', 1)): ?>
-        <div class="span4 poweredby">
-          <a class="t3-logo t3-logo-light" href="http://t3-framework.org" title="Powered By T3 Framework" target="_blank">Powered by <strong>T3 Framework</strong></a>
-        </div>
-        <?php endif; ?>
-      </div>
-    </div>
-  </section>
-
+<footer>
+	<div class="idea">
+		Ẩn sau những bông hoa là những câu chuyện tình cảm, những lời muốn nói. 
+		Hãy để Shop HoaThuyAnh.vn thay bạn nói những lời yêu thương.
+	</div>
+	<div class="seperator"></div>
+	<div class="footer-container">
+		<div class="fltlft">
+			<ul>
+				<li><h1>HoaThuyAnh.vn</h1></li>
+				<li class="short-intro">Cửa hàng hoa tươi chuyên cung cấp các loại hoa tươi, hoa bó, hoa giỏ...v.v</li>
+				<li>Địa chỉ: 123 Thành Công, Ba Đình, Hà Nội</li>
+				<li>Hotline: 0123456789</li>
+				<li>Email: contact@hoathuyanh.vn</li>
+			</ul>
+		</div>
+		<div class="fltrgt">
+			Mở cửa 24/24 hàng ngày!
+		</div>
+		<div class="clr"></div>
+	</div>
 </footer>
 <!-- //FOOTER -->
