@@ -20,10 +20,26 @@ $children = $category->getChildren();
 					echo $category->title;
 				?>
 			</h2>
-				
+		</div>
+		<div class="seperator"></div>
+		<div class="left-info">
+			<h2>GIAO HÀNG</h2>
+			<img src="<?php echo JURI::base()?>images/freeship.jpg" />
+		</div>
+		<div class="seperator"></div>
+		<div class="left-info">
+			<h2>ĐIỆN HOA NHƯ Ý</h2>
+			<ul>
+				<li>- Thiết kế hoa sảnh, hoa hội nghị, chúc mừng, khai trương, định
+					kỳ, ...</li>
+				<li>- Thiết kế hoa theo sự kiện, các dịp lễ hội, ...</li>
+				<li>- Có dịch vụ giao quà tận nơi & nhiều ưu đãi cho khách hàng thân
+					thiết</li>
+				<li>- Cung cấp các loại hoa tươi sỉ và lẻ</li>
+			</ul>
 		</div>
 	</div>
-	
+
 	<div class="right fltrgt span10">
 		
 	
@@ -31,31 +47,36 @@ $children = $category->getChildren();
 	
 		<ul class="list-category">
 			<?php 
-			foreach ($children as $child): 
+			foreach ($children as $key => $child): 
 				$link = JRoute::_(JE_ProductHelperRoute::getCategoryRoute($child->id));
 			?>
-			<li>
-				<?php
-					$params = $child->getParams();
-					$image = $params->get('image');
-	
-					if ($image):
-				?>
-					<img src="<?php echo $image; ?>" />
-				<?php endif; ?>
-					
-				<h2>
-					<a href="<?php echo $link; ?>">
+			<li <?php if ( ($key + 1) % 3 == 0) echo 'class="last"'?>>
+				<div class="home-text">
+					<a class="images" href="<?php echo $link; ?>">
+						
+						<?php
+							$params = $child->getParams();
+							$image = $params->get('image');
+			
+							if ($image):
+						?>
+							<img src="<?php echo $image; ?>" />
+						<?php endif; ?>
+						
 						<?php echo $child->title; ?>
 					</a>
-				</h2>
+				</div>
+				
+				<div class="clr"></div>
+				
 			</li>
 			<?php endforeach; ?>
 		</ul>
+		
+		<div class="clr"></div>
 	
-		<?php return 1; ?>
-		<?php endif; ?>
-	
+		<?php else: ?>
+		
 		<ul class="latest-list-images list-items fltlft">
 			<?php foreach ($items as $key => $item): ?>
 			<li <?php if ( ($key + 1) % 3 == 0) echo 'class="last"'?>>
@@ -75,28 +96,29 @@ $children = $category->getChildren();
 							<?php echo $item->name; ?>
 						</a>
 					</h3>
-	
+
 					<a title="<?php echo $item->name; ?>" href="<?php echo $link; ?>">
-						<span class="img">
-							<img alt="<?php echo $item->alias; ?>" src="images/je_products/thumbs/<?php echo THUMB_WIDTH_LIST . '/' . @$thumb[0]; ?>">
-						</span>
+						<span class="img"> <img alt="<?php echo $item->alias; ?>"
+							src="images/je_products/thumbs/<?php echo THUMB_WIDTH_LIST . '/' . @$thumb[0]; ?>">
+					</span>
 					</a>
-					<p class="price">Giá bán: <?php echo number_format($item->promotion_price); ?> VNĐ</p>
+					<p>Giá bán: <?php echo number_format($item->promotion_price); ?> đ</p>
+					<a href="#" class="btn">Mua ngay</a>
 				</div>
 			</li>
 			<?php endforeach; ?>
 			<?php if (empty($items)): ?>
-			<li>
-				Danh sách sản phẩm đang được cập nhật!
-			</li>
+			<li>Danh sách sản phẩm đang được cập nhật!</li>
 			<?php endif; ?>
 		</ul>
-	
+		
 		<div class="clr"></div>
-	
+
 		<div class="pagination">
 			<?php echo $this->pagination->getPagesLinks(); ?>
 		</div>
+		
+		<?php endif; ?>
 	</div>
 </div>
 <div class="clr"></div>

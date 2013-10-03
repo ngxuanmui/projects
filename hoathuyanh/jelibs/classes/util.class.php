@@ -74,6 +74,8 @@ class JEUtil
 			
 			$thumbFile[] = $path . '/thumbnail-' . $imgFile;
 			
+// 			var_dump($tmp, $imgFile, $path, $newPathThumb, $thumbFile);
+			
 			//make dir if not exist
 			if(!is_dir($newPathThumb))
 				mkdir($newPathThumb, 0777, true);

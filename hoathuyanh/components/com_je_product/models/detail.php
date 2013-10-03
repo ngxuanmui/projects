@@ -133,9 +133,10 @@ class JE_ProductModelDetail extends JModel
 		$nullDate = $db->Quote($db->getNullDate());
 		$nowDate = $db->Quote(JFactory::getDate()->toMySQL());
 		
-		$query  = ' SELECT DISTINCT a.id, a.*, IF(a.location = "*", "all-location", i.name) AS location_name FROM #__je_products a ';
+		$query  = ' SELECT DISTINCT a.id, a.*, c.title AS category_title, IF(a.location = "*", "all-location", i.name) AS location_name FROM #__je_products a ';
 		$query .= " LEFT JOIN #__je_product_info pi ON a.id = pi.product_id ";
 		$query .= " LEFT JOIN #__je_info i ON ( i.id = a.location ) "; 		
+		$query .= " INNER JOIN #__categories c ON (a.catid = c.id)";
 		$query .= " WHERE a.state = 1 ";
 		$query .= ' AND (a.publish_up = '.$nullDate.' OR a.publish_up <= '.$nowDate.')';
 		//$query .= ' AND (a.publish_down = '.$nullDate.' OR a.publish_down >= '.$nowDate.')';

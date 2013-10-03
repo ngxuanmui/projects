@@ -38,7 +38,7 @@ foreach ($items as $key => $item):
 		?>
 		
 		<a title="<?php echo $item->name; ?>" href="<?php echo JRoute::_(JE_ProductHelperRoute::getDetailRoute($item->id, $item->catid, $item->alias)); ?>">
-			<span class="img">
+			<span class="img home-img">
 				<img alt="<?php echo $item->alias; ?>" src="images/je_products/thumbs/<?php echo THUMB_WIDTH_LIST . '/' . $thumb[0]; ?>">
 			</span>
 		</a>
@@ -46,7 +46,7 @@ foreach ($items as $key => $item):
 		<?php /*
 		<p class="price">Giá cũ: <strike><?php echo number_format($item->price); ?></strike> vnđ</p>
 		*/ ?>
-		<p class="price">Giá bán: <?php echo number_format($item->promotion_price); ?> vnđ</p>
+		<p>Giá bán: <?php echo number_format($item->promotion_price); ?> đ</p>
 		<a class="btn" href="#">Mua ngay</a>
 	</li>
 <?php endforeach; ?>
@@ -79,13 +79,13 @@ foreach ($promotion_items as $key => $item):
 		?>
 		
 		<a title="<?php echo $item->name; ?>" href="<?php echo JRoute::_(JE_ProductHelperRoute::getDetailRoute($item->id, $item->catid, $item->alias)); ?>">
-			<span class="img">
+			<span class="img home-img">
 				<img alt="<?php echo $item->alias; ?>" src="images/je_products/thumbs/<?php echo THUMB_WIDTH_LIST . '/' . $thumb[0]; ?>">
 			</span>
 		</a>
 		
-		<p class="price">Giá cũ: <strike><?php echo number_format($item->price); ?></strike> vnđ</p>
-		<p class="price">Giá bán: <?php echo number_format($item->promotion_price); ?> vnđ</p>
+		<p>Giá cũ: <strike><?php echo number_format($item->price); ?></strike> đ</p>
+		<p>Giá bán: <?php echo number_format($item->promotion_price); ?> đ</p>
 		<a class="btn" href="#">Mua ngay</a>
 	</li>
 <?php endforeach; ?>

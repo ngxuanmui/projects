@@ -11,9 +11,9 @@
 defined('_JEXEC') or die;
 
 define('PATH_TO_IMAGE', 'images/je_products/upload/');
-define('THUMB_WIDTH_LIST', 120);
-define('THUMB_HEIGHT_LIST', 120);
-define('THUMB_WIDTH', 270);
+define('THUMB_WIDTH_LIST', 230);
+define('THUMB_HEIGHT_LIST', 230);
+define('THUMB_WIDTH', 400);
 
 define('NEW_THUMB_WIDTH', 50);
 
