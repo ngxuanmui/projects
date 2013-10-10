@@ -4,10 +4,12 @@ defined('_JEXEC') or die;
 
 class JE_ProductModelDetail extends JModel
 {
-	function getItem()
+	function getItem($id = 0)
 	{
 		$db = JFactory::getDbo();
-		$id = JRequest::getVar('id');
+		
+		if (!$id)
+			$id = JRequest::getVar('id');
 		
 		//update hits
 		$this->updateHits();

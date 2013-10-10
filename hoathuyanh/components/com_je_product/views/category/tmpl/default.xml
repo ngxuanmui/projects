@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-	<layout title="JE Promotion Category" option="JE Options">
+	<layout title="Category" option="JE Options">
 		<message>
 			<![CDATA[Promotion Category]]>
 		</message>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-	<layout title="JE Home" option="JE Options">
+	<layout title="Home page" option="JE Options">
 		<message>
 			<![CDATA[Home]]>
 		</message>

@@ -20,7 +20,7 @@ if ($logoimage) {
   <div class="row">
 
     <!-- LOGO -->
-    <div class="span8 logo">
+    <div class="fltlft logo">
       <div class="logo-<?php echo $logotype ?>">
         <a href="<?php echo JURI::base(true) ?>" title="<?php echo strip_tags($sitename) ?>"<?php echo $logoimage ?>>
           <span><?php echo $sitename ?></span>
@@ -29,6 +29,14 @@ if ($logoimage) {
       </div>
     </div>
     <!-- //LOGO -->
+    
+    <div class="fltlft">
+    	<div class="bg-banner">
+    		<div class="fltrgt top-small-menu">  
+		    	<jdoc:include type="modules" name="top-small-menu" style="xhtml" />
+		    </div>
+    	</div>
+    </div>
 
     <?php if($this->countModules('head-search or languageswitcherload')): ?>
     <div class="span4 clearfix">  

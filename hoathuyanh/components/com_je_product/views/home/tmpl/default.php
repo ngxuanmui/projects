@@ -6,9 +6,11 @@ jimport('joomla.application.module.helper');
 
 $items = $this->items;
 $promotion_items = $this->promotion_items;
+
+// always load modal
 ?>
 
-<img src="<?php echo JURI::base()?>/images/slider3.jpg" />
+<img src="<?php echo JURI::base()?>/images/slider.png" />
 
 <h1 class="box-title">
 	<span>SẢN PHẨM MỚI</span>
@@ -47,7 +49,7 @@ foreach ($items as $key => $item):
 		<p class="price">Giá cũ: <strike><?php echo number_format($item->price); ?></strike> vnđ</p>
 		*/ ?>
 		<p>Giá bán: <?php echo number_format($item->promotion_price); ?> đ</p>
-		<a class="btn" href="#">Mua ngay</a>
+		<a class="btn fancybox fancybox.iframe" href="<?php echo JRoute::_('index.php?option=com_je_product&task=shopping_cart.add&id=' . $item->id, false); ?>">Mua ngay</a>
 	</li>
 <?php endforeach; ?>
 </ul>
@@ -86,7 +88,7 @@ foreach ($promotion_items as $key => $item):
 		
 		<p>Giá cũ: <strike><?php echo number_format($item->price); ?></strike> đ</p>
 		<p>Giá bán: <?php echo number_format($item->promotion_price); ?> đ</p>
-		<a class="btn" href="#">Mua ngay</a>
+		<a class="btn fancybox fancybox.iframe" href="<?php echo JRoute::_('index.php?option=com_je_product&task=shopping_cart.add&id=' . $item->id, false); ?>">Mua ngay</a>
 	</li>
 <?php endforeach; ?>
 </ul>

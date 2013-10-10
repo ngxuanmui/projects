@@ -6,8 +6,8 @@ class JE_ProductControllerOrder extends JController
 	{
 		$post = JRequest::get('post');
 		
-		$model = $this->getModel('Order', 'JE_ProductModel');
-		$item = $model->getItem();
+// 		$model = $this->getModel('Order', 'JE_ProductModel');
+// 		$item = $model->getItem();
 		
 		$mailer =& JFactory::getMailer();
 		
@@ -22,22 +22,18 @@ class JE_ProductControllerOrder extends JController
 		// set recipient
 		$mailer->addRecipient($config->getValue( 'config.mailfrom' ));
 		
-		$mailer->setSubject('New order from website dienlanhsieure.com');
+		$mailer->setSubject('New order from website hoathuyanh.com.vn');
 		
 		// Optional file attached
 //		$mailer->addAttachment(JPATH_COMPONENT.DS.'assets'.DS.'document.pdf');
 
-		$body   = '<h2>Hello Admin. New order form website dienlanhsieure.com</h2>'
-					. '<div style="margin-top: 20px; margin-bottom: 10px; font-weight: bold;">Some information</div>'
+		$body   = '<h2>Hello Admin. New order form website hoathuyanh.com.vn</h2>'
+					. '<div style="margin-top: 20px; margin-bottom: 10px; font-weight: bold;">Information</div>'
 					. '<div>Fullname: ' . $post['fullname'] . '</div>'
 					. '<div>Email: ' . $post['email'] . '</div>'
 					. '<div>Mobile: ' . $post['mobile'] . '</div>'
 					. '<div>Number: ' . $post['number'] . '</div>'
 					. '<div>Comment: ' . $post['comment'] . '</div>'
-					. '<div style="margin-top: 20px; margin-bottom: 10px; font-weight: bold;">Order Product</div>'
-					. '<div><a href="' . JRoute::_('index.php?option=com_je_product&view=detail&id='. $item->id.':'.$item->alias, false) .'">
-						'.$item->name.'
-					</a></div>'
 				;
 		
 		$mailer->isHTML(true);

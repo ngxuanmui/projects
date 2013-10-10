@@ -28,7 +28,7 @@ $children = $category->getChildren();
 		</div>
 		<div class="seperator"></div>
 		<div class="left-info">
-			<h2>ĐIỆN HOA NHƯ Ý</h2>
+			<h2>ĐIỆN HOA HOATHUYANH.VN</h2>
 			<ul>
 				<li>- Thiết kế hoa sảnh, hoa hội nghị, chúc mừng, khai trương, định
 					kỳ, ...</li>
@@ -103,7 +103,7 @@ $children = $category->getChildren();
 					</span>
 					</a>
 					<p>Giá bán: <?php echo number_format($item->promotion_price); ?> đ</p>
-					<a href="#" class="btn">Mua ngay</a>
+					<a class="btn fancybox fancybox.iframe" href="<?php echo JRoute::_('index.php?option=com_je_product&task=shopping_cart.add&id=' . $item->id, false); ?>">Mua ngay</a>
 				</div>
 			</li>
 			<?php endforeach; ?>

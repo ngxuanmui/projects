@@ -1,7 +1,2 @@
 
-
-.com_content body,
-.com_mailto body {
-  padding-top: 0;
-}
-
+body { background: #FFF; margin: 0; padding: 0; }

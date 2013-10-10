@@ -22,6 +22,17 @@ defined('_JEXEC') or die;
   <head>
     <jdoc:include type="head" />
     <?php $this->loadBlock ('head') ?>
+    
+    <script type="text/javascript" src="<?php echo JURI::base(); ?>/media/hoathuyanh/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="<?php echo JURI::base(); ?>/media/hoathuyanh/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+	
+	<script type="text/javascript">
+	<!--
+	jQuery(document).ready(function($) {
+		$('.fancybox').fancybox({'maxWidth': 600, 'maxHeight': 400});
+	});
+	//-->
+	</script>
   </head>
 
   <body>

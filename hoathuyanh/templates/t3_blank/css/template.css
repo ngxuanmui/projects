@@ -225,7 +225,7 @@ a.thumbnail:hover {
 }
 
 body {
-	background: url('../images/body_bg.jpg') top center;
+	background: url('../images/body_bg.jpg');
   background-color: #fff;
   color: #666;
   font-family: sans-serif;
@@ -2787,8 +2787,8 @@ article aside .btn-group > .dropdown-toggle:focus {
 }
 
 .t3-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .logo {
   float: left;
@@ -2802,10 +2802,11 @@ article aside .btn-group > .dropdown-toggle:focus {
   overflow: hidden;
 }
 .logo-image a {
-  background-image: url("../images/logo-flower.png");
+  background-image: url("../images/flowers_logo.png");
   background-repeat: no-repeat;
-  width: 212px;
-  height: 65px;
+  background-size: 162px auto;
+  width: 170px;
+  height: 100px;
 }
 .logo-image span,
 .logo-image small {

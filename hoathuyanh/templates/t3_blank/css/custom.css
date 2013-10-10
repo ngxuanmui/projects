@@ -1,13 +1,21 @@
 @CHARSET "UTF-8";
 
 /* overwrite */
-.t3-mainnav { background: url('../images/cat_navbar.gif') repeat-x; border-bottom: 4px solid #6D9F10; }
+.t3-mainnav { background: #4a225d; border-bottom: 4px solid #c487fd; }
 .t3-mainnav .navbar .nav > .active > a, .t3-mainnav .navbar .nav > .active > a:hover, .t3-mainnav .navbar .nav > .active > a:focus { background: none; }
 .t3-mainnav .nav li.dropdown.active > .dropdown-toggle, 
 .t3-mainnav .nav li.dropdown.open.active > .dropdown-toggle, 
-.t3-mainnav .nav li.active > a { background: #6D9F10 !important; }
-.t3-mainnav .navbar .nav > li > a { color: #FFF; }
+.t3-mainnav .nav li.active > a { background: #c487fd !important; }
+.t3-mainnav .navbar .nav > li > a { color: #FFF; text-transform: uppercase;}
 .t3-mainbody { padding-top: 0; }
+.t3-mainnav .navbar .nav > li > a { padding: 10px 10px; font-size: 0.85em; }
+.logo-image a { margin-left: 00px; }
+.logo { margin-left: 60px; }
+
+form { margin: 0 30px 20px 0; }
+
+.span12 { width: 960px; }
+.span10 { width: 800px; }
 
 /* basic */
 .fltlft, .float-left { float: left; }
@@ -21,12 +29,12 @@ ul { list-style: none; margin: 0; padding: 0; }
 footer > div.footer-container { padding: 20px 30px; }
 footer div.idea { color: #6d9f10; padding: 5px 20px; line-height: 20px; font-size: 0.9em; font-weight: normal; }
 .seperator { height: 2px; border-top: 4px solid #c6c6c6; border-bottom: 1px solid #c6c6c6; margin: 5px 0; }
-h1.box-title { border-bottom: 1px solid #EFEFEF; padding: 0; }
-h1.box-title span { display: inline-block; border: 1px solid #EFEFEF; background: #6D9F10; color: #FFF; padding: 3px 15px 1px 15px; margin: 13px 0 0 20px; border-bottom: 0; font-size: 14px; line-height: 30px; }
+h1.box-title { border-bottom: 1px solid #c487fd; padding: 0; }
+h1.box-title span { display: inline-block; border: 1px solid #EFEFEF; background: #c487fd; color: #FFF; padding: 3px 15px 1px 15px; margin: 13px 0 0 20px; border-bottom: 0; font-size: 14px; line-height: 30px; }
 
 ul.list-items { margin: 20px 30px; }
 ul.list-items li { float: left; width: 200px; margin: 0; padding: 0; margin-right: 10px; }
-ul.list-items li h3 { line-height: 20px; font-size: 18px; }
+ul.list-items li h3 { line-height: 20px; font-size: 16px; }
 ul.list-items li.last { margin-right: 0; }
 ul.list-items li img { width: 100%; }
 ul.list-items li span.img { display: block; border: 1px solid #CCC; height: 230px; overflow: hidden; margin: 5px 0; }
@@ -34,10 +42,12 @@ span.home-img { height: 150px !important; }
 ul.list-items li p { margin: 5px 0; padding: 0; }
 
 .span2, .span10, .span5, .span7 { margin-left: 0; }
-.box-header { background-color: #6D9F10; padding: 10px; margin: 20px 0 0; }
+.span2 { width: 160px; }
+.box-header { background-color: #c487fd; padding: 10px; margin: 20px 0 0; }
 .box-header h2 { font-size: 2.0em; color: #111; line-height: 1.25; margin-bottom: .45em; font-weight: normal; color: #FFF; text-align: center; }
 
-ul.latest-list-images li { width: 235px; }
+ul.latest-list-images { margin-left: 30px; }
+ul.latest-list-images li { width: 230px; }
 
 .left-info h2 { font-size: 14px; color: #6D9F10; padding-left: 20px; margin: 0; line-height: 30px; }
 .left-info ul { margin: 0 10px; }
@@ -50,7 +60,7 @@ ul.latest-list-images li { width: 235px; }
 .home-text h1 { color:#090909; border-bottom: 1px solid #9a9a9a; padding-bottom:15px; }
 .home-text p { border-top: 1px solid #e6e6e6; padding-top:15px;}
 .home-text.last { margin: 0 0 15px 0;}
-.home-text a { color: #6D9F10; font-size: 20px; line-height: 22px; }
+.home-text a { color: #4a225d; font-size: 20px; line-height: 22px; }
 
 ul.list-category { margin: 20px 30px; }
 ul.list-category li { float: left; margin-right: 20px; margin-bottom: 20px; }
@@ -63,3 +73,19 @@ ul.list-category li { float: left; margin-right: 20px; margin-bottom: 20px; }
 p.price { font-size: 25px; }
 .thumb { cursor: pointer; }
 .note-active { margin: 20px 0; }
+
+.tbl-shopping-cart h3 { margin: 0; padding: 0; line-height: 20px; font-size: 14px; }
+.tbl-shopping-cart p.shopping-cart-price { margin-top: 10px; }
+
+.txtbox { width: 50px; }
+
+.top-small-menu ul { float: right; }
+.top-small-menu ul li { float: left; font-size: 12px; margin-left: 5px; }
+.top-small-menu ul li a { padding: 2px 5px;}
+.top-small-menu ul li a:hover { color: #000; }
+
+.top-small-menu ul li:nth-child(1) a { background: url('../images/cart.png') no-repeat; background-size: 25px auto; padding-left: 25px; height: 23px; line-height: 22px; }
+.top-small-menu ul li:nth-child(2) a { background: url('../images/Introduction.png') no-repeat; background-size: 30px auto; padding-left: 28px; height: 23px; line-height: 22px; }
+.top-small-menu ul li:nth-child(3) a { background: url('../images/Contact.png') no-repeat; background-size: 23px auto; padding-left: 26px; height: 23px; line-height: 22px; }
+
+.bg-banner { background: url('../images/thay-ban-noi-loi.png') 140px 40px no-repeat; width: 740px; height: 105px; background-size: 500px auto; }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-	<layout title="JE Edit" option="JE Options">
+	<layout title="Edit Data" option="JE Options">
 		<message>
-			<![CDATA[Edit]]>
+			<![CDATA[Edit Data]]>
 		</message>
 	</layout>
 </metadata>

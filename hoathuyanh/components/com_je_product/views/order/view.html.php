@@ -21,13 +21,13 @@ jimport('joomla.application.component.view');
  */
 class JE_ProductViewOrder extends JView
 {
-	protected $item;
+	protected $items;
 	
 	function display($tpl = null)
 	{
-		$this->item = $this->get('Item');
+		$this->items = $this->get('Items');
 		
-		if(!$this->item)
+		if(!$this->items)
 			return;
 		
 		$this->_prepareDocument();
