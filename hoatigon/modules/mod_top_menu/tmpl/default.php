@@ -11,11 +11,11 @@ defined('_JEXEC') or die;
 ?>
 
 <div id="top-menu">
-	<a href="#" class="icons trang-chu"></a>
-	<a href="#" class="icons nuoi-day"></a>
-	<a href="#" class="icons thuc-don"></a>
-	<a href="#" class="icons tho-truyen"></a>
-	<a href="#" class="icons hinh-anh"></a>
-	<a href="#" class="icons lien-he"></a>
+	<a href="<?php echo JURI::base(); ?>" class="icons trang-chu"></a>
+	<a href="<?php echo JRoute::_('index.php?Itemid=104', false); ?>" class="icons nuoi-day"></a>
+	<a href="<?php echo JRoute::_('index.php?Itemid=105', false); ?>" class="icons thuc-don"></a>
+	<a href="<?php echo JRoute::_('index.php?Itemid=106', false); ?>" class="icons tho-truyen"></a>
+	<a href="<?php echo JRoute::_('index.php?Itemid=107', false); ?>" class="icons hinh-anh"></a>
+	<a href="<?php echo JRoute::_('index.php?Itemid=108', false); ?>" class="icons lien-he"></a>
 	<div class="clr"></div>
 </div>

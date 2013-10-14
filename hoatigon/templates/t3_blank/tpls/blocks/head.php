@@ -43,3 +43,21 @@ if(is_file(T3_TEMPLATE_PATH . '/css/custom.css')) {
 <![endif]-->
 
 <!-- You can add Google Analytics here-->
+
+<script type="text/javascript" src="<?php echo JURI::base(); ?>/media/jquery.bxslider/jquery.bxslider.js"></script>
+<script type="text/javascript">
+<!--
+jQuery.noConflict();
+jQuery(function($){
+	$('.footer-slider').bxSlider({
+		  maxSlides: 3,
+		  moveSlides: 1,
+		  slideWidth: 310,
+		  slideMargin: 10,
+		  pager: false,
+		  auto: true,
+		  controls: false
+	}).reloadSlider();
+});
+//-->
+</script>

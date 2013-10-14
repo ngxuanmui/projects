@@ -10,7 +10,7 @@
 defined('_JEXEC') or die;
 
 ?>
-<div class="icons top-box-latest-news"></div>
+<div class="icons top-box-latest-news">TIN MỚI NHẤT</div>
 <div class="right-latest-news">
 	<ul class="latestnews<?php echo $moduleclass_sfx; ?>">
 	<?php

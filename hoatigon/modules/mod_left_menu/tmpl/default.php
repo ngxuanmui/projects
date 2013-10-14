@@ -11,9 +11,9 @@ defined('_JEXEC') or die;
 ?>
 
 <div class="left-menu box bg round relative">
-	<a href="#" class="icons co-cau-to-chuc"></a>
-	<a href="#" class="icons tien-ich"></a>
-	<a href="#" class="icons nuoi-day"></a>
-	<a href="#" class="icons hoat-dong"></a>
+	<a href="<?php echo JRoute::_('index.php?Itemid=109', false); ?>" class="icons co-cau-to-chuc"></a>
+	<a href="<?php echo JRoute::_('index.php?Itemid=110', false); ?>" class="icons tien-ich"></a>
+	<a href="<?php echo JRoute::_('index.php?Itemid=104', false); ?>" class="icons nuoi-day"></a>
+	<a href="<?php echo JRoute::_('index.php?Itemid=112', false); ?>" class="icons hoat-dong"></a>
 	<div class="icons absolute con-chim"></div>
 </div>

@@ -1,6 +1,6 @@
 @CHARSET "UTF-8";
 
-body { background: #91d7eb; font-size: 12px; }
+body { background: #81D4F7; font-size: 12px; }
 
 .absolute { position: absolute; }
 .relative { position: relative; }
@@ -13,8 +13,8 @@ body { background: #91d7eb; font-size: 12px; }
 .logo-image a { width: 361px; height: 242px; }
 .banner-txt-intro { background: url('../images/banner-text-intro.png') no-repeat; width: 465px; height: 177px; display: block; }
 
-#banner-top { height: 604px; top: 0; left: 0; z-index: -1; background: url('../images/bg-top.png') top center; width: 100%; }
-#banner-bottom { height: 633px; bottom: 0; left: 0; z-index: -1; background: url('../images/bg-bottom.png') top center; width: 100%; }
+#banner-top { height: 604px; top: 0; left: 0; z-index: -1; background: url('../images/bg-top.png') top center no-repeat; width: 100%; background-size: 100%; }
+#banner-bottom { height: 633px; bottom: 0; left: 0; z-index: -1; background: url('../images/bg-bottom.png') bottom center no-repeat; width: 100%; background-size: 100%; }
 
 /* overwrite t3 css */
 .t3-header { padding-top: 150px; }
@@ -89,14 +89,14 @@ footer div.icons { height: 154px; background-position: 0 -220px; margin-top: 20p
 .right-other a.camera { width: 177px; height: 130px; background-position: -223px -378px; margin-left: 15px; }
 .right-other a.thu-vien-anh { width: 139px; height: 163px; background-position: -408px -379px; margin-left: 42px; }
 .right-other a.kho-video { width: 156px; height: 183px; background-position: -558px -376px; margin-left: 40px; }
-.top-box-latest-news { width: 232px; height: 53px; background-position: -394px -128px; }
+.top-box-latest-news { width: 142px; height: 23px; background-position: -394px -128px; padding: 30px 0 0 90px; font-weight: bold; color: #ed1c24; font-style: italic;  font-size: 16px; }
 .right-latest-news { background: url('../images/bg-latest-news.png')  repeat-y; padding: 0px 15px; width: 192px; }
 .right-latest-news a { display: block; font-weight: bold; padding-top: 10px; }
 .bottom-box-latest-news { width: 232px; height: 33px; background-position: -394px -189px; }
 /* end right */
 
 /* bottom */
-.box-1 { border: 4px solid #f47920; width: 920px; margin: auto; border-radius: 10px; margin-top: 20px; padding: 10px 20px; background: #fad5e5; }
+.box-1 { border: 4px solid #f47920; width: 920px; margin: auto; border-radius: 10px; margin-top: 20px; padding: 10px 20px 25px; background: #fad5e5; }
 .box-1 .hinh-anh-be { background-position: -750px -64px; width: 218px; height: 36px; }
 .dia-chi-truong-mam-non { background-position: 0px -764px; width: 334px; height: 13px; right: 10px; bottom: 0; }
 
@@ -104,3 +104,11 @@ footer div.icons { height: 154px; background-position: 0 -220px; margin-top: 20p
 /* content */
 .body-featured ul { list-style: none; margin: 0; padding: 0; }
 .body-featured ul li { background: url("../images/icon-hoatigon.png") 0px 5px no-repeat; padding-left: 30px; margin-top: 20px; }
+
+._ag_thumbclassic { width: 119px; }
+ul.footer-slider { margin: 10px 0 10px 5px; }
+ul.footer-slider li { height: 202px; }
+ul.footer-slider li img { border: 1px solid #CCC; width: 272px; }
+.new-album-container .bx-wrapper, .anh-chuong-trinh-ngoai-khoa .bx-wrapper { margin: 0 !important; padding: 0; }
+
+#youtube-gallery { with: 430px; }

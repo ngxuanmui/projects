@@ -14,6 +14,17 @@
 
 
 defined('_JEXEC') or die;
+
+// read folder
+$footerGallery =array();
+$footerGalleryUrl = JURI::base() .  '/images/gallery/hinh-anh-be/';
+$filePath	= JPATH_ROOT . DS . 'images' . DS . 'gallery' . DS . 'hinh-anh-be' . DS;
+$dir = opendir($filePath);
+while ($file = readdir($dir)) {
+	if (preg_match("/.png/",$file) || preg_match("/.jpg/",$file) || preg_match("/.gif/",$file) ) {
+		$footerGallery[] = $file;
+	}
+}
 ?>
 
 <!DOCTYPE html>
@@ -45,8 +56,16 @@ defined('_JEXEC') or die;
     <div class="box-1 relative">
     	<div class="icons hinh-anh-be"></div>
     	<div class="slider">
-    		Hình ảnh slider
-    	</div>
+				<ul class="footer-slider">
+					<?php 
+					while (sizeof($footerGallery) != 0):
+						$img = array_pop($footerGallery);
+					?>
+					<li><img src="<?php echo $footerGalleryUrl . $img; ?>" /></li>
+					<?php endwhile; ?>
+				</ul>
+				<div class="clr"></div>
+			</div>
     	<div class="icons absolute dia-chi-truong-mam-non"></div>
     </div>
     
