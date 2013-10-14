@@ -11,7 +11,7 @@ defined('_JEXEC') or die;
 ?>
 
 <div class="left-other box bg round relative">
-	<a href="#" class="icons tuyen-dung" title="Tuyển dụng"></a>
+	<a href="<?php echo JRoute::_('index.php?Itemid=122', false); ?>" class="icons tuyen-dung" title="Tuyển dụng"></a>
 	<div class="icons txt-support-online"></div>
 	<div class="support-info">
 		<a href="#" class="icons yahoo-support"></a>
