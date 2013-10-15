@@ -21,7 +21,7 @@ $footerGalleryUrl = JURI::base() .  '/images/gallery/hinh-anh-be/';
 $filePath	= JPATH_ROOT . DS . 'images' . DS . 'gallery' . DS . 'hinh-anh-be' . DS;
 $dir = opendir($filePath);
 while ($file = readdir($dir)) {
-	if (preg_match("/.png/",$file) || preg_match("/.jpg/",$file) || preg_match("/.gif/",$file) ) {
+	if (preg_match("/.png/i",$file) || preg_match("/.jpg/i",$file) || preg_match("/.gif/i",$file) ) {
 		$footerGallery[] = $file;
 	}
 }
