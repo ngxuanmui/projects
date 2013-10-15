@@ -87,5 +87,19 @@ p.price { font-size: 25px; }
 .top-small-menu ul li:nth-child(1) a { background: url('../images/cart.png') no-repeat; background-size: 25px auto; padding-left: 25px; height: 23px; line-height: 22px; }
 .top-small-menu ul li:nth-child(2) a { background: url('../images/Introduction.png') no-repeat; background-size: 30px auto; padding-left: 28px; height: 23px; line-height: 22px; }
 .top-small-menu ul li:nth-child(3) a { background: url('../images/Contact.png') no-repeat; background-size: 23px auto; padding-left: 26px; height: 23px; line-height: 22px; }
+.top-small-menu ul li:nth-child(4) a { background: url('../images/news-icon.png') no-repeat; background-size: 21px auto; padding-left: 24px; height: 23px; line-height: 22px; }
 
 .bg-banner { background: url('../images/thay-ban-noi-loi.png') 140px 40px no-repeat; width: 740px; height: 105px; background-size: 500px auto; }
+
+.item-page { width: 930px; pading: 10px 20px 10px 10px; text-align: justify; }
+
+.img-fulltext-none { text-align: center; }
+
+.desc-intro { width: 790px; }
+.desc-intro a { display: block; margin-bottom: 10px; font-weight: bold; }
+.desc-intro a.view-item { font-weight: normal; font-size: 0.8em; float: right; }
+.desc-intro .desc-intro-desc { font-size: 0.9em; text-align: justify; }
+.img-intro { width: 120px; }
+.img-intro img { width: 100px; border: 1px solid #CCC; }
+.items { margin: 5px 0 0; margin-right: 30px; padding: 10px; }
+.even { background: #efefef; }

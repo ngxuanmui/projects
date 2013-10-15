@@ -23,13 +23,14 @@ $thumbHeight = 800;
 	  $i = 1;
 	  $total = 0;
 	  
-	  foreach ($items as $key => $item): 
-		  require_once JPATH_ROOT . DS . 'jelibs/classes/util.class.php';
-		  
-		  $pathUpload = JPATH_ROOT . DS . PATH_TO_IMAGE;
-		  $pathThumb = JPATH_ROOT . DS . 'images/je_products/thumbs/' . $thumbWidth . DS;
-		  
-		  $thumb = JEUtil::thumb($item->images, $pathUpload, $pathThumb, $thumbWidth, $thumbHeight);
+	  if (!empty($items)):
+		  foreach ($items as $key => $item): 
+			  require_once JPATH_ROOT . DS . 'jelibs/classes/util.class.php';
+			  
+			  $pathUpload = JPATH_ROOT . DS . PATH_TO_IMAGE;
+			  $pathThumb = JPATH_ROOT . DS . 'images/je_products/thumbs/' . $thumbWidth . DS;
+			  
+			  $thumb = JEUtil::thumb($item->images, $pathUpload, $pathThumb, $thumbWidth, $thumbHeight);
 	  
 	  ?>
 	  <tr>
@@ -72,6 +73,13 @@ $thumbHeight = 800;
 				<a href="<?php echo JRoute::_('index.php?option=com_je_product&view=order', false); ?>" class="btn">Đặt hàng</a>
 			</td>
 		</tr>
+		<?php else: ?>
+		<tr>
+			<td colspan="8">
+				<span class="fltlft">Chưa có sản phẩm nào trong giỏ hàng</span>
+			</td>
+		</tr>
+		<?php endif; ?>
 	</table>
 </form>
 

@@ -25,10 +25,12 @@ class JE_ProductViewShopping_Carts extends JView
 	
 	function display($tpl = null)
 	{
-		$this->items = $this->get('Items');
+		$items = $this->get('Items');
 		
-		if(!$this->items)
-			return;
+		if(!$items)
+			$items = array();
+		
+		$this->items = $items;
 		
 		$this->_prepareDocument();
 

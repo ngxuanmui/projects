@@ -12,6 +12,9 @@ class JE_ProductModelShopping_Carts extends JModelLegacy
 		
 		$list = array();
 		
+		if (empty($cartItems))
+			return false;
+		
 		foreach ($cartItems as $id => $qty)
 		{
 			$list[] = $id;
