@@ -56,7 +56,7 @@ if (!empty($this->item->pagination) AND $this->item->pagination && !$this->item-
 	</h2>
 <?php endif; ?>
 
-<?php if ($canEdit ||  $params->get('show_print_icon') || $params->get('show_email_icon')) : ?>
+<?php /* if ($canEdit ||  $params->get('show_print_icon') || $params->get('show_email_icon')) : ?>
 	<ul class="actions">
 	<?php if (!$this->print) : ?>
 		<?php if ($params->get('show_print_icon')) : ?>
@@ -84,7 +84,7 @@ if (!empty($this->item->pagination) AND $this->item->pagination && !$this->item-
 	<?php endif; ?>
 
 	</ul>
-<?php endif; ?>
+<?php endif; */ ?>
 
 <?php  if (!$params->get('show_intro')) :
 	echo $this->item->event->afterDisplayTitle;
@@ -92,15 +92,15 @@ endif; ?>
 
 <?php echo $this->item->event->beforeDisplayContent; ?>
 
-<?php $useDefList = (($params->get('show_author')) or ($params->get('show_category')) or ($params->get('show_parent_category'))
+<?php /* $useDefList = (($params->get('show_author')) or ($params->get('show_category')) or ($params->get('show_parent_category'))
 	or ($params->get('show_create_date')) or ($params->get('show_modify_date')) or ($params->get('show_publish_date'))
-	or ($params->get('show_hits'))); ?>
+	or ($params->get('show_hits'))); */ ?>
 
-<?php if ($useDefList) : ?>
+<?php /* if ($useDefList) : ?>
 	<dl class="article-info">
 	<dt class="article-info-term"><?php  echo JText::_('COM_CONTENT_ARTICLE_INFO'); ?></dt>
-<?php endif; ?>
-<?php if ($params->get('show_parent_category') && $this->item->parent_slug != '1:root') : ?>
+<?php endif; */ ?>
+<?php /*if ($params->get('show_parent_category') && $this->item->parent_slug != '1:root') : ?>
 	<dd class="parent-category-name">
 	<?php	$title = $this->escape($this->item->parent_title);
 	$url = '<a href="'.JRoute::_(ContentHelperRoute::getCategoryRoute($this->item->parent_slug)).'">'.$title.'</a>';?>
@@ -181,7 +181,7 @@ endif; ?>
 	endif; ?>
 	src="<?php echo htmlspecialchars($images->image_fulltext); ?>" alt="<?php echo htmlspecialchars($images->image_fulltext_alt); ?>"/>
 </div>
-<?php endif; ?>
+<?php endif; */ ?>
 <?php
 if (!empty($this->item->pagination) AND $this->item->pagination AND !$this->item->paginationposition AND !$this->item->paginationrelative):
 	echo $this->item->pagination;
@@ -191,16 +191,16 @@ if (!empty($this->item->pagination) AND $this->item->pagination AND !$this->item
 	<?php echo $this->item->text; ?>
 </div>
 
-<?php
+<?php /*
 if (!empty($this->item->pagination) AND $this->item->pagination AND $this->item->paginationposition AND!$this->item->paginationrelative):
 	 echo $this->item->pagination;?>
-<?php endif; ?>
+<?php endif; */ ?>
 
-<?php if (isset($urls) AND ((!empty($urls->urls_position)  AND ($urls->urls_position=='1')) OR ( $params->get('urls_position')=='1') )): ?>
+<?php /* if (isset($urls) AND ((!empty($urls->urls_position)  AND ($urls->urls_position=='1')) OR ( $params->get('urls_position')=='1') )): ?>
 <?php echo $this->loadTemplate('links'); ?>
-<?php endif; ?>
+<?php endif; */ ?>
 	<?php //optional teaser intro text for guests ?>
-<?php elseif ($params->get('show_noauth') == true and  $user->get('guest') ) : ?>
+<?php /* elseif ($params->get('show_noauth') == true and  $user->get('guest') ) : ?>
 	<?php echo $this->item->introtext; ?>
 	<?php //Optional link to let them register to see the whole article. ?>
 	<?php if ($params->get('show_readmore') && $this->item->fulltext != null) :
@@ -225,11 +225,11 @@ if (!empty($this->item->pagination) AND $this->item->pagination AND $this->item-
 		endif; ?></a>
 		</p>
 	<?php endif; ?>
-<?php endif; ?>
-<?php
+<?php endif; */ ?>
+<?php /*
 if (!empty($this->item->pagination) AND $this->item->pagination AND $this->item->paginationposition AND $this->item->paginationrelative):
 	 echo $this->item->pagination;?>
-<?php endif; ?>
+<?php endif; */ ?>
 
 <?php echo $this->item->event->afterDisplayContent; ?>
 </div>

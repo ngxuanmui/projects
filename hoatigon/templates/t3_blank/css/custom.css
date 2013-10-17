@@ -48,10 +48,10 @@ footer div.icons { height: 154px; background-position: 0 -220px; margin-top: 20p
 /* end layout */
 
 /* other */
-.xoay-tren {}
-.xoay-duoi-1 {}
-.xoay-duoi-2 {}
-.xoay-duoi-2 {}
+.xoay-tren { width: 69px; height: 64px; background-position: -230px -128px; top: 0px; left: -3px; }
+.xoay-duoi-1 { width: 69px; height: 64px; background-position: -230px -54px; bottom: -3px; right: -5px; }
+.xoay-duoi-2 { width: 69px; height: 64px; background-position: -230px -54px; bottom: -3px; right: -5px; }
+.xoay-duoi-3 { width: 69px; height: 64px; background-position: -230px -54px; bottom: -3px; right: -5px; }
 .con-kien { width: 74px; height: 64px; background-position: -321px -52px; top: -40px; left: -7px; }
 .con-chim { width: 73px; height: 54px; background-position: -640px -141px; top: -42px; left: -5px; }
 .top-slider-image { margin-bottom: 25px; margin-left: 15px; }
@@ -64,12 +64,17 @@ footer div.icons { height: 154px; background-position: 0 -220px; margin-top: 20p
 .left-menu a.nuoi-day { background-position: -258px -673px; height: 36px; }
 .left-menu a.hoat-dong { background-position: -258px -715px; height: 34px; }
 
+.left-menu a.co-cau-to-chuc:hover, .left-menu a.co-cau-to-chuc-active { background-position: -466px -592px; }
+.left-menu a.tien-ich:hover, .left-menu a.tien-ich-active { background-position: -466px -634px; height: 32px; }
+.left-menu a.nuoi-day:hover, .left-menu a.nuoi-day-active { background-position: -466px -673px; height: 36px; }
+.left-menu a.hoat-dong:hover, .left-menu a.hoat-dong-active { background-position: -466px -715px; height: 34px; }
+
 .left-album div.anh-moi { width: 139px; height: 41px; margin-right: 35px; background-position: -557px -53px; margin-top: 7px; }
 
 .new-album-container { padding: 15px 0 30px 9px; margin-left: 15px; }
 .new-album-frame { background-position: 0 -585px; width: 212px; height: 165px; display: block; top: 0; left: 0; }
 
-.chuong-trinh-ngoai-khoa { background-position: -557px -108px; width: 201px; height: 21px; margin-left: 21px; }
+.txt-chuong-trinh-ngoai-khoa { background-position: -557px -108px; width: 201px; height: 21px; margin-left: 21px; }
 .anh-chuong-trinh-ngoai-khoa { background-position: 0 -382px; width: 207px; height: 206px; margin-left: 18px; margin-bottom: 15px;  }
 .anh-chuong-trinh-ngoai-khoa img { margin: 40px 0 0 14px; }
 
@@ -79,12 +84,12 @@ footer div.icons { height: 154px; background-position: 0 -220px; margin-top: 20p
 .left-other .yahoo-support { display: inline-block; width: 48px; height: 40px; background-position: -741px -575px; }
 .left-other .so-dien-thoai { display: inline-block; width: 169px; height: 35px; background-position: -796px -579px; margin-left: 5px; }
 .left-other .txt-stat { width: 150px; height: 40px; background-position: -739px -619px; margin-left: 35px; }
-.left-other .stat-info { height: 80px; padding: 10px 30px; }
+.left-other .stat-info { height: 80px; padding: 10px 30px 45px 30px; }
 
 /* end left */
 
 /* right */
-.right-other { padding: 30px 0; margin-bottom: 10px; text-align: center; }
+.right-other { padding: 50px 0 30px 0; margin-bottom: 10px; text-align: center; }
 .right-other a { display: block; margin-bottom: 15px; }
 .right-other a.camera { width: 177px; height: 130px; background-position: -223px -378px; margin-left: 15px; }
 .right-other a.thu-vien-anh { width: 139px; height: 163px; background-position: -408px -379px; margin-left: 42px; }

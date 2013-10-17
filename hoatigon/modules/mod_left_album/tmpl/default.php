@@ -30,7 +30,7 @@ while ($file = readdir($dir)) {
 }
 ?>
 
-<div class="left-album box bg round">
+<div class="left-album box bg round relative">
 	<div class="icons anh-moi fltrgt"></div>
 	<div class="clr"></div>
 	<div class="new-album-container relative">
@@ -44,7 +44,7 @@ while ($file = readdir($dir)) {
 		</ul>
 		<span class="new-album-frame icons absolute"></span>
 	</div>
-	<div class="icons chuong-trinh-ngoai-khoa"></div>
+	<div class="icons txt-chuong-trinh-ngoai-khoa"></div>
 	<div class="icons anh-chuong-trinh-ngoai-khoa">
 		<ul class="chuong-trinh-ngoai-khoa">
 			<?php 
@@ -55,6 +55,8 @@ while ($file = readdir($dir)) {
 			<?php endwhile; ?>
 		</ul>
 	</div>
+	
+	<div class="icons absolute xoay-tren"></div>
 </div>
 
 <script type="text/javascript">
