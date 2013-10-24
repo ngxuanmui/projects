@@ -42,6 +42,13 @@ if(is_file(T3_TEMPLATE_PATH . '/css/custom.css')) {
 <script type="text/javascript" src="<?php echo T3_URL ?>/js/respond.min.js"></script>
 <![endif]-->
 
+<!--[if lte IE 8]>
+<?php 
+// SYSTEM CSS
+$this->addStyleSheet(JURI::base(true).'/templates/t3_blank/css/ie.css'); 
+?>
+<![endif]-->
+
 <!-- You can add Google Analytics here-->
 
 <script type="text/javascript" src="<?php echo JURI::base(); ?>/media/jquery.bxslider/jquery.bxslider.js"></script>

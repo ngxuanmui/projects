@@ -58,7 +58,7 @@ footer div.icons { height: 154px; background-position: 0 -220px; margin-top: 20p
 
 /* left */
 .left-menu { padding: 35px 25px 20px 22px; }
-.left-menu a { display: block; margin-bottom: 10px; }
+.left-menu a:link, .left-menu a:visited { display: block; margin-bottom: 10px; border: none; }
 .left-menu a.co-cau-to-chuc { background-position: -258px -592px; height: 32px; }
 .left-menu a.tien-ich { background-position: -258px -634px; height: 32px; }
 .left-menu a.nuoi-day { background-position: -258px -673px; height: 36px; }

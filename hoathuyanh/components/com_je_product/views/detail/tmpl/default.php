@@ -73,7 +73,7 @@ jQuery(function($){
 				<?php endif; ?>
 			</div>
 			
-			<a href="#" class="btn">Mua ngay</a>
+			<a class="btn fancybox fancybox.iframe" href="<?php echo JRoute::_('index.php?option=com_je_product&task=shopping_cart.add&id=' . $item->id, false); ?>">Mua ngay</a>
 			
 		</div>
 	</div>

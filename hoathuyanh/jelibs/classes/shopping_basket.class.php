@@ -123,6 +123,8 @@ class ShoppingBasket {
 	 * @return array $itemArray
 	 */
 	function getBasket($id = 0) {
+		$itemArray = array();
+		
 		if (isset ( $_SESSION ['cart'] )) {
 			foreach ( $_SESSION ['cart'] as $k => $v ) {
 				$itemArray [$k] = $v;
