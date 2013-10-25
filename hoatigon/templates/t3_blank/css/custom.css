@@ -117,3 +117,7 @@ ul.footer-slider li img { border: 1px solid #CCC; width: 272px; }
 .new-album-container .bx-wrapper, .anh-chuong-trinh-ngoai-khoa .bx-wrapper { margin: 0 !important; padding: 0; }
 
 #youtube-gallery { with: 430px; }
+
+.row { margin-bottom: 46px; }
+
+.logo-image a { position: absolute; }

@@ -43,10 +43,7 @@ if(is_file(T3_TEMPLATE_PATH . '/css/custom.css')) {
 <![endif]-->
 
 <!--[if lte IE 8]>
-<?php 
-// SYSTEM CSS
-$this->addStyleSheet(JURI::base(true).'/templates/t3_blank/css/ie.css'); 
-?>
+<link rel="stylesheet" href="<?php echo JURI::base(true).'/templates/t3_blank/css/ie.css'; ?>" type="text/css" />
 <![endif]-->
 
 <!-- You can add Google Analytics here-->
