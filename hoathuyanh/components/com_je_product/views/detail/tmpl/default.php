@@ -50,9 +50,11 @@ jQuery(function($){
 				<?php endforeach; ?>
 			</div>
 			
+			<?php if (count($thumb) > 1): ?>
 			<?php foreach ($thumb as $key => $img): ?>
 			<img rel="thumb-<?php echo $key; ?>" class="thumb border" alt="<?php echo $item->alias; ?>" src="images/je_products/thumbs/<?php echo NEW_THUMB_WIDTH . '/' . $img; ?>" />
 			<?php endforeach; ?>
+			<?php endif; ?>
 		</div>
 	</div>
 	

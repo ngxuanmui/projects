@@ -17,9 +17,7 @@ class Je_ProductModelHome extends JModel
 		else 
 			$query->where('sticky = 1');
 		
-		$db->setQuery($query);
-		
-		
+		$db->setQuery($query, 0, 8);
 		
 		$rs = $db->loadObjectList();
 		

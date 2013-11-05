@@ -54,6 +54,7 @@ foreach ($items as $key => $item):
 <?php endforeach; ?>
 </ul>
 <div class="clr"></div>
+<?php if (!empty($promotion_items)): ?>
 <h1 class="box-title">
 	<span>SẢN PHẨM GIẢM GIÁ</span>
 </h1>
@@ -92,4 +93,5 @@ foreach ($promotion_items as $key => $item):
 	</li>
 <?php endforeach; ?>
 </ul>
+<?php endif; ?>
 <div class="clr"></div>
