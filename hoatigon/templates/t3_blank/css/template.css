@@ -2932,3 +2932,5 @@ article aside .btn-group > .dropdown-toggle:focus {
   opacity: .5;
 }
 
+#top-banner { margin: 0 0 10px 15px !important; }
+#top-banner li { width: 910px !important; height: 229px; overflow: hidden; border-radius: 10px; }

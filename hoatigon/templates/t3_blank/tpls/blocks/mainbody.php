@@ -57,7 +57,9 @@ defined('_JEXEC') or die;
 
 <div id="t3-mainbody" class="container t3-mainbody">
   
-  <img src="<?php echo JURI::root() ?>/templates/t3_blank/images/demo/2.png" class="top-slider-image" />
+  
+  <jdoc:include type="modules" name="top-banner" style="xhtml" />
+  
   <div class="clr"></div>
     
     <?php if ($this->countModules($sidebar1)) : ?>
