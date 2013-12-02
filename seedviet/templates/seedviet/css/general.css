@@ -75,3 +75,12 @@ ul.left-module-box li { text-align: center; margin: 0; padding: 5px 0;}
 .stat-container { padding-top: 150px; }
 .left-nick-yahoo { display: block; margin-left: 30px; }
 .txt-mobile-support { width: 152px; height: 19px; background: url('../images/txt-mobile-support.png') no-repeat; margin: 10px auto;  }
+
+.img-intro img { float: left; margin-right: 10px; max-width: 100px; }
+
+a:link, a:visited { text-decoration: none; color: #230001; }
+a:hover { color: #230001; }
+
+p.readmore { text-align: right; }
+
+div.pagination ul li { float: left; margin: 0 10px; list-style: none; }

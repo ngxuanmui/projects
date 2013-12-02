@@ -103,6 +103,7 @@ $doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/general.c
 					<div class="content bg-content round-conners-10">
 						<jdoc:include type="component" />
 						
+						<jdoc:include type="modules" name="other-articles" />
 					</div>
 				</div>
 				
@@ -124,7 +125,7 @@ $doc->addStyleSheet($this->baseurl.'/templates/'.$this->template.'/css/general.c
 		
 		<div id="footer" class="relative">
 			<div class="footer-content">
-				<p>Trường mầm non chất lượng cao SeedViet</p>
+				<p>Trường mầm non chất lượng cao Seed Việt</p>
 				<p>Địa chỉ: Thanh Liệt, Thanh Trì, Hà Nội</p>
 				<p>Điện thoại: 0918.685.085</p>
 			</div>
